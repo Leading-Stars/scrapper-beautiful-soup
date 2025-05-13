@@ -11,12 +11,10 @@ from itertools import cycle
 import phonenumbers
 import time
 
-
-
 # --- Configurable Settings ---
 LINKS_FILE = "links.json"
 OUTPUT_FILE = "output_results.json"
-MAX_CONCURRENT_PAGES = 5  # Increase based on system resources
+MAX_CONCURRENT_PAGES = 7  # Increase based on system resources
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
@@ -220,7 +218,7 @@ async def main():
 
     start_time = time.time()
 
-    BATCH_SIZE = 5  # Change this number if you want different batch sizes
+    BATCH_SIZE = 7  # Change this number if you want different batch sizes
 
     all_results = []
 
